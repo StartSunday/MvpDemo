@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="RatingBar">
+        <!--星星间距-->
+        <attr format="dimension" name="starDistance"/>
+        <!--星星大小-->
+        <attr format="dimension" name="starSize"/>
+        <!--星星个数-->
+        <attr format="integer" name="starCount"/>
+        <!--星星空图-->
+        <attr format="reference" name="starEmpty"/>
+        <!--星星满图-->
+        <attr format="reference" name="starFill"/>
+    </declare-styleable>
+
+    <declare-styleable name="VerityCodeButton">
+        <!--默认背景-->
+        <attr name="android:background" />
+        <!--点击后背景-->
+        <attr name="clickedBackground" format="reference" />
+        <!--倒计时间-->
+        <attr name="countdownTime" format="integer" />
+        <!--倒计时间后提示文字-->
+        <attr name="countdownText" format="string" />
+    </declare-styleable>
+</resources>

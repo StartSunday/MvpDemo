@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyFont">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="MyFont.Title">
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:lines">1</item>
+    </style>
+    <style name="MyFont.Title.White">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyFont.Title.Small">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="MyFont.Title.Large">
+        <item name="android:textSize">@dimen/text_size_xxlarge</item>
+    </style>
+    <style name="MyFont.Content">
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">@dimen/text_size_default</item>
+    </style>
+    <style name="MyFont.Content.Light">
+        <item name="android:textColor">@color/text_gray_light</item>
+    </style>
+
+    <style name="MyFont.Content.Black">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+    <style name="MyFont.Content.Gray">
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+    <style name="MyFont.Content.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="MyFont.Tip">
+        <item name="android:textColor">@color/text_gray_light</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="MyFont.Tip.Small">
+        <item name="android:textSize">@dimen/text_size_xsmall</item>
+    </style>
+</resources>

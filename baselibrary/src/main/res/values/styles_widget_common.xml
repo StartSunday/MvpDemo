@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ScrollBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scrollbarSize">@dimen/line_size</item>
+
+        <item name="android:scrollbarTrackVertical">@color/white</item>
+    </style>
+    <!--item项控件样式-->
+    <style name="ItemDefault">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/view_margin</item>
+        <item name="android:paddingRight">@dimen/view_margin</item>
+        <item name="android:paddingTop">@dimen/view_margin</item>
+        <item name="android:paddingBottom">@dimen/view_margin</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!--列表中item的样式-->
+    <style name="ItemDefault.List">
+        <item name="android:background">@drawable/shape_white_corners_fill</item>
+        <item name="android:layout_marginTop">@dimen/view_margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/view_margin</item>
+        <item name="android:layout_marginRight">@dimen/view_margin</item>
+    </style>
+    <!--线条样式-->
+    <style name="Line">
+        <item name="android:layout_width">@dimen/line_size</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/line</item>
+    </style>
+    <style name="Line_Large">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_margin_xsmall</item>
+        <item name="android:background">@color/line</item>
+    </style>
+    <style name="Line.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_size</item>
+        <item name="android:background">@color/line</item>
+    </style>
+
+    <!--按钮默认样式-->
+    <!--<style name="ButtonDefault" parent="MyFont.Content">-->
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:minHeight">@dimen/button_height</item>-->
+        <!--<item name="android:minWidth">@dimen/button_width</item>-->
+        <!--<item name="android:paddingLeft">@dimen/view_margin</item>-->
+        <!--<item name="android:paddingRight">@dimen/view_margin</item>-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:textColor">@color/white</item>-->
+        <!--<item name="android:background">@drawable/btn_default</item>-->
+    <!--</style>-->
+
+    <!--<style name="ButtonDefault.Small">-->
+        <!--<item name="android:minHeight">@dimen/button_height_small</item>-->
+        <!--<item name="android:minWidth">@dimen/button_width_small</item>-->
+        <!--<item name="android:paddingLeft">@dimen/view_margin_xsmall</item>-->
+        <!--<item name="android:paddingRight">@dimen/view_margin_xsmall</item>-->
+    <!--</style>-->
+    <!--&lt;!&ndash;默认头像&ndash;&gt;-->
+    <!--<style name="Avatar">-->
+        <!--<item name="android:layout_width">@dimen/avatar_size</item>-->
+        <!--<item name="android:layout_height">@dimen/avatar_size</item>-->
+        <!--<item name="android:scaleType">centerCrop</item>-->
+    <!--</style>-->
+
+    <!--<style name="Avatar.Middle">-->
+        <!--<item name="android:layout_width">@dimen/avatar_size_middle</item>-->
+        <!--<item name="android:layout_height">@dimen/avatar_size_middle</item>-->
+    <!--</style>-->
+
+    <!--<style name="Avatar.Small">-->
+        <!--<item name="android:layout_width">@dimen/avatar_size_small</item>-->
+        <!--<item name="android:layout_height">@dimen/avatar_size_small</item>-->
+        <!--<item name="android:scaleType">centerCrop</item>-->
+    <!--</style>-->
+    <!--&lt;!&ndash;空心默认状态按钮&ndash;&gt;-->
+    <!--<style name="ButtonStrokeDefault" parent="MyFont.Tip.Small">-->
+        <!--<item name="android:layout_height">@dimen/button_height_small</item>-->
+        <!--<item name="android:paddingLeft">@dimen/view_margin_xxsmall</item>-->
+        <!--<item name="android:paddingRight">@dimen/view_margin_xxsmall</item>-->
+        <!--<item name="android:textColor">@color/colorAccent</item>-->
+        <!--<item name="android:paddingTop">@dimen/line_size</item>-->
+        <!--<item name="android:paddingBottom">@dimen/line_size</item>-->
+        <!--<item name="android:background">@drawable/shape_default_corners</item>-->
+    <!--</style>-->
+    <style name="Dot">
+        <item name="android:layout_width">@dimen/view_margin_xxxsmall</item>
+        <item name="android:layout_height">@dimen/view_margin_xxxsmall</item>
+        <item name="android:background">@drawable/shape_red_oval_fill</item>
+    </style>
+    <!--&lt;!&ndash;标题栏样式&ndash;&gt;-->
+    <style name="TitleBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/toolbar_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <!--弹窗-->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>

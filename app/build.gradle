@@ -1,0 +1,165 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'//kapt3插件
+apply from: "${rootProject.projectDir}/default.gradle"
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+    generateStubs = true
+}
+
+android {
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+    defaultConfig {
+        applicationId "com.sun.mvpdemo"
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+//        ndk {
+//            //选择要添加的对应cpu类型的.so库。
+//            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86'
+//            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+//        }
+    }
+
+//    sourceSets {
+//        main {
+//            jniLibs.srcDir 'libs'
+//            //说明so的路径为该libs路径，关联所有地图SDK的so文件
+//        }
+//    }
+    flavorDimensions "mvp"
+    //签名打包数据
+    signingConfigs {
+        release {
+            storeFile file("D:\\AndroidStudioProjects\\androidDemo\\MvpDemo\\mvp.jks")
+            storePassword "123456"
+            keyAlias "mvp"
+            keyPassword "123456"
+        }
+        debug {
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            aaptOptions.cruncherEnabled = false
+            aaptOptions.useNewCruncher = false
+            zipAlignEnabled true  //apk优化
+            signingConfig signingConfigs.release
+            minifyEnabled false //混淆开关
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    flavorDimensions "versionCode"
+    //增加java堆内存大小:
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+    productFlavors {
+        // 官网
+        offical {
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    //打包配置
+    //1、pickFirsts:当出现重复文件，会使用第一个匹配的文件打包进入apk
+    //2、merges:当出现重复文件，合并重复的文件打入apk
+    //3、excludes:打包的时候排除匹配的文件
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/maven.com.squareup.retrofit2.converter-gson/pom.xml'
+
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+        // as noted by @Vishnuvathsan you may also need to include
+        // variations on the file name. It depends on your dependencies.
+        // Some other common variations on notice and license file names
+        exclude 'META-INF/notice'
+        exclude 'META-INF/license'
+    }
+    lintOptions {
+        disable 'GoogleAppIndexingWarning'
+        disable 'MissingTranslation'
+        disable 'ExtraTranslation'
+    }
+
+    applicationVariants.all { variant ->
+        setApkName(variant, defaultConfig)
+    }
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+}
+
+static def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+def setApkName(variant, defaultConfig) {
+    println("setName===== begin")
+    def flavor = variant.mergedFlavor
+    def buildType = variant.buildType
+
+    // 添加环境后缀
+    def suffix1
+    suffix1 = ""
+
+//    // 添加渠道后缀
+    def suffix2
+    if (!"offical".equals(variant.flavorName)) {
+        suffix2 = "." + variant.flavorName
+    } else {
+        suffix2 = ""
+    }
+
+    // 生成包名
+    flavor.applicationId = defaultConfig.applicationId + suffix1
+
+    variant.outputs.all {
+        outputFileName = "MvpDemo-V${defaultConfig.versionName}-${defaultConfig.versionCode}-${releaseTime()}-${variant.productFlavors[0].name}.apk"
+    }
+
+    println("setName===== end with " + variant.flavorName + ";" + flavor.applicationId)
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':baselibrary')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    kapt ARouterLibs
+    implementation rxLibs
+    implementation baseLibs
+    implementation supportLibs
+    implementation networkLibs
+    implementation rxJavaLibs
+    implementation widgetLibs
+    debugImplementation debugLibs
+    releaseImplementation releaseLibs
+    kapt annotationProcessorLibs
+
+}

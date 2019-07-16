@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       android:id="@+id/swipe_layout"
+                                                       style="@style/MatchWrap">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        style="@style/MatchWrap"/>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

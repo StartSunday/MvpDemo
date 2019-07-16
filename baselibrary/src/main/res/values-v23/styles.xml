@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseAppTheme">
+        <!-- activity 默认背景色 -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!--23 直接生效，状态栏文字颜色变成黑色，非沉浸式-->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+
+</resources>

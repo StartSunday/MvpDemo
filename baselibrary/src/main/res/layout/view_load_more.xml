@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap">
+
+    <LinearLayout
+        android:id="@+id/load_more_loading_view"
+        style="@style/MatchMatch.Horizontal"
+        android:gravity="center"
+        android:padding="@dimen/view_margin">
+
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_4"
+            android:indeterminateDrawable="@drawable/brvah_sample_footer_loading_progress" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            style="@style/MyFont.Content"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:textColor="@color/text_gray_light"
+            android:text="@string/loading" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/load_more_load_fail_view"
+        style="@style/MatchMatch"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tv_prompt"
+            style="@style/MyFont.Content"
+            android:layout_gravity="center"
+            android:padding="@dimen/view_margin"
+            android:textColor="@color/text_gray_light"
+            android:text="@string/load_failed"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/load_more_load_end_view"
+        style="@style/MatchMatch"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/MyFont.Content"
+            android:layout_gravity="center"
+            android:padding="@dimen/view_margin"
+            android:textColor="@color/text_gray_light"
+            android:text="@string/load_end" />
+    </FrameLayout>
+</FrameLayout>

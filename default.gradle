@@ -1,0 +1,193 @@
+ext {
+    versions = [
+            compileSdkVersion: 28,
+            minSdkVersion    : 21,
+            targetSdkVersion : 27,
+            buildToolsVersion: "28.0.3",
+
+            support          : "28.0.0",
+            okHttp           : "3.10.0",
+            retrofit         : '2.4.0',
+            dagger           : '2.15',
+            rxJava           : '2.2.2',
+            rxAndroid        : '2.1.0',
+            rxPermissions    : '0.10.2',
+            glide            : '4.6.1',
+            stetho           : '1.5.0',
+
+            espresso         : '3.0.1',
+            testRunner       : '1.0.1',
+            restMock         : '0.3.1',
+            mockito          : '2.18.0',
+            junit            : '4.12',
+            powerMock        : '1.6.6',
+            leakcanary       : '1.5.4',
+            stethOkhttp      : '1.5.0',
+            multiDex         : '1.0.3',
+            eventbus         : '3.1.1',
+            Constraint       : '1.1.3',
+            //Dagger2
+            Dagger2          : '2.11',
+            //RX_life
+            RX_life          : '1.0'
+    ]
+
+    mockito = [mockito: "org.mockito:mockito-core:$versions.mockito"]
+    junit = [junit: "junit:junit:$versions.junit"]
+    restMock = [restMock: "com.github.andrzejchm.RESTMock:android:$versions.restMock"]
+
+    supportDeps = [
+            cardView         : "androidx.cardview:cardview:1.0.0",
+            appcompatV7      : "androidx.appcompat:appcompat:1.0.0",
+            design           : "com.google.android.material:material:1.0.0-rc01",
+            recyclerView     : "androidx.recyclerview:recyclerview:1.0.0",
+            supportAnnotation: "androidx.annotation:annotation:1.0.0",
+            gridLayout       : "androidx.gridlayout:gridlayout:1.0.0",
+            constraint       : "androidx.constraintlayout:constraintlayout:1.1.2",
+            supportV4        : "androidx.legacy:legacy-support-v4:1.0.0",
+    ]
+
+    rxJava = [
+            rxJava       : "io.reactivex.rxjava2:rxjava:$versions.rxJava",
+            rxAndroid    : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
+            rxRermissions: "com.github.tbruyelle:rxpermissions:$versions.rxPermissions"
+    ]
+
+    retrofit = [
+            retrofit     : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+            rxAdapter    : "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit",
+            gsonConverter: "com.squareup.retrofit2:converter-gson:2.3.0",
+    ]
+
+
+
+    okHttp = [
+            logger: "com.squareup.okhttp3:logging-interceptor:$versions.okHttp",
+            okhttp: "com.squareup.okhttp3:okhttp:$versions.okHttp",
+            stetho: "com.facebook.stetho:stetho-okhttp3:$versions.stetho"
+    ]
+    //高德地图
+    amap = [
+            location: 'com.amap.api:location:latest.integration',
+            search: 'com.amap.api:search:latest.integration',
+            map: 'com.amap.api:3dmap:latest.integration'
+    ]
+
+    onlyDebug = [
+            chuck: "com.readystatesoftware.chuck:library:1.1.0"
+    ]
+
+    onlyRelease = [
+            chuckNoOp   : 'com.readystatesoftware.chuck:library-no-op:1.1.0',
+            sherlockNoOp: 'com.github.ajitsing:sherlock-no-op:1.0.4@aar'
+    ]
+//
+//
+//    unitTest = [
+//            robolectric      : "org.robolectric:robolectric:$versions.robolectric",
+//            supportAnnotation: "com.android.support:support-annotations:$versions.support",
+//            restMock         : "com.github.andrzejchm.RESTMock:android:$versions.restMock",
+//
+//    ] + junit + mockito + restMock
+//
+//    androidTests = [
+//            mockitoAndroid    : "org.mockito:mockito-android:$versions.mockito",
+//            espressoCore      : "com.android.support.test.espresso:espresso-core:$versions.espresso",
+//            espressoContrib   : "com.android.support.test.espresso:espresso-contrib:$versions.espresso",
+//            espressoIntents   : "com.android.support.test.espresso:espresso-intents:$versions.espresso",
+//            espressoAcc       : "com.android.support.test.espresso:espresso-accessibility:$versions.espresso",
+//            espressoIdle      : "com.android.support.test.espresso:espresso-idling-resource:$versions.espresso",
+//            espressoConcurrent: "com.android.support.test.espresso.idling:idling-concurrent:$versions.espresso",
+//            espressoNetIdle   : "com.android.support.test.espresso.idling:idling-net:$versions.espresso",
+//            testRunner        : "com.android.support.test:runner:$versions.testRunner",
+//            testRules         : "com.android.support.test:rules:$versions.testRunner"
+//    ] + mockito + restMock
+
+    leakCannary = "com.squareup.leakcanary:leakcanary-android:1.5.1"
+    eventbus = "org.greenrobot:eventbus:$versions.eventbus"
+    kotlinJre = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //https://github.com/lovetuzitong/MultiImageSelector/blob/master/README_zh.md
+//    MultiImageSelector  = 'com.github.lovetuzitong:MultiImageSelector:1.2'//相机相册
+//    Pay = 'io.github.mayubao:pay_library:1.0.1'
+    ExpandableTextView = 'com.jaydenxiao:ExpandableTextView:1.0.0'
+    //https://github.com/square/dagger（https://github.com/googlesamples/android-architecture）
+    //https://github.com/maning0303/MNProgressHUD
+    MNProgressHUD ='com.github.maning0303:MNProgressHUD:V1.1.7' //彈框
+    photoView = 'com.bm.photoview:library:1.4.1'
+//    bufferknife = "com.jakewharton:butterknife:8.8.1"
+//    butterknifeCompiler = 'com.jakewharton:butterknife-compiler:8.8.1'
+    glide = "com.github.bumptech.glide:glide:$versions.glide"
+    glideCompiler = "com.github.bumptech.glide:compiler:$versions.glide"
+    glideOkhttp = "com.github.bumptech.glide:okhttp3-integration:$versions.glide"
+    recyclerviewHelper = 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    //http://www.recyclerview.org/
+    umengAnalytics = 'com.umeng.analytics:analytics:latest.integration' //友盟统计
+    pickers = 'com.github.addappcn:android-pickers:1.0.3'
+    //https://github.com/addappcn/android-pickers
+    album = 'com.github.Carpten:Album:2.3' //https://github.com/Carpten/Album
+    jsbridge = 'com.github.lzyzsd:jsbridge:1.0.4' //https://github.com/lzyzsd/JsBridge
+//    customPopwindow = 'com.github.pinguo-zhouwei:CustomPopwindow:2.1.1'
+    citypicker = 'com.zaaach:citypicker:2.0.2'
+    Log = 'com.safframework.log:saf-log:1.0.1'
+    //https://github.com/pinguo-zhouwei/CustomPopwindow
+    pickerView = 'com.contrarywind:Android-PickerView:4.1.6' //https://github.com/Bigkoo/Android-PickerView
+//    readMoreTextView='com.ms-square:expandableTextView:0.1.4'
+//    statusBar = 'com.githang:status-bar-compat:0.7'
+    //LRecyclerView = 'com.github.jdsjlzx:LRecyclerView:1.5.4.3'//侧滑删除
+//    jpush = 'cn.jiguang.sdk:jpush:3.1.6'
+//    jcore = 'cn.jiguang.sdk:jcore:1.2.5'
+    flycoTabLayout = 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    flowlayout = 'com.hyman:flowlayout-lib:1.1.2'  //流式布局
+//    Banner = 'com.youth.banner:banner:1.4.10' //轮播
+    ArouterCompiler = 'com.alibaba:arouter-compiler:1.2.1'
+    xBanner = 'com.github.xiaohaibin:XBanner:1.6.4'//将latestVersion替换成上面 jitpack 后面的版本号
+    //极光
+//    jpush = 'cn.jiguang.sdk:jpush:3.1.3'
+//    jcore = 'cn.jiguang.sdk:jcore:1.2.5'
+//    jmessage = 'cn.jiguang.sdk:jmessage:2.7.1'
+//    RxBus = 'com.github.like5188:RxBus:2.0.1'
+//    RxCompiler = 'com.github.like5188.RxBus:rxbus-compiler:2.0.1' // java
+
+    pinyin = 'com.belerweb:pinyin4j:2.5.0'
+    //阿里路由
+    arouterApi = 'com.alibaba:arouter-api:1.4.0'
+
+    weChat = 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:1.0.2'
+
+    //RxLifecycle  解决RxJava内存泄漏
+    rxlifecycle = "com.trello:rxlifecycle-kotlin:$versions.RX_life"
+    rxlifecycleComponents = "com.trello:rxlifecycle-components:$versions.RX_life"
+    statusBar = 'com.githang:status-bar-compat:0.7'
+
+    fastjson =  'com.alibaba:fastjson:1.2.10'
+    //Dagger2
+//    dagger = "com.google.dagger:dagger:$versions.Dagger2" // Dagger 2 依赖
+//    daggerSupport = "com.google.dagger:dagger-android-support:$versions.Dagger2" // Dagger 2 Android 支持包
+//    daggerCompiler = "com.google.dagger:dagger-compiler:$versions.Dagger2" // Dagger 2 注解处理
+//    daggerProcessor = "com.google.dagger:dagger-android-processor:$versions.Dagger2" // Dagger 2 注解处理 Android 支持
+
+//    daggerCompiler = "com.google.dagger:dagger-compiler:$versions.Dagger2"
+//    dagger = "com.google.dagger:dagger:$versions.Dagger2"
+  //  databindingCompiler = "com.android.databinding:compiler:3.2.0-alpha10"
+    //视频播放
+//    gsyVideoPlayer = 'com.shuyu:GSYVideoPlayer:2.0.0'
+//    activeandroid = 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT' //数据库
+    //高德地图
+
+    /**
+     * 项目引用库
+     */
+    baseLibs = [kotlinJre,glide,eventbus,arouterApi,recyclerviewHelper,jsbridge,Log,pickerView,leakCannary,statusBar,MNProgressHUD]
+    supportLibs = supportDeps.values()
+    networkLibs = retrofit.values() + okHttp.values()
+    rxJavaLibs = rxJava.values()
+    rxLibs = [rxlifecycle, rxlifecycleComponents]
+    widgetLibs = [xBanner, pickers,flycoTabLayout,flowlayout,citypicker,photoView,pinyin,fastjson,ExpandableTextView,weChat]
+    debugLibs = onlyDebug.values()
+    releaseLibs = onlyRelease.values()
+    ARouterLibs = [ArouterCompiler]
+//    unitTestLibs = unitTest.values()
+//    androidTestsLibs = androidTests.values()
+//    aMapLibs = amap.values()
+    annotationProcessorLibs = [glideCompiler]
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginStart="@dimen/view_margin"
+    android:layout_marginEnd="@dimen/view_margin"
+    android:layout_marginBottom="@dimen/view_margin_xsmall"
+    style="@style/MatchWrap.Vertical">
+    <TextView
+        android:id="@+id/take_photo"
+        style="@style/MyFont.Title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/def_height"
+        android:gravity="center"
+        android:textColor="@color/text_blue"
+        android:text="@string/take_photo"
+        android:background="@drawable/shape_white_corners_fill_up"/>
+    <View
+        style="@style/Line.Horizontal"/>
+    <TextView
+        android:id="@+id/from_album"
+        style="@style/MyFont.Title"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="@dimen/def_height"
+        android:textColor="@color/text_blue"
+        android:text="@string/from_album"
+        android:background="@drawable/shape_white_corners_fill_down"/>
+    <View
+        style="@style/Line.Horizontal"
+        android:layout_height="@dimen/dp_10"/>
+    <TextView
+        android:id="@+id/cancel"
+        style="@style/MyFont.Title"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="@dimen/def_height"
+        android:layout_marginTop="@dimen/view_margin_xsmall"
+        android:textColor="@color/text_blue"
+        android:text="@string/cancel"
+        android:background="@drawable/shape_white_corners_fill"/>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--字体大小-->
+    <dimen name="text_size_xxxxlarge">40sp</dimen>
+    <dimen name="text_size_28sp">28sp</dimen>
+    <dimen name="text_size_xxxlarge">20sp</dimen>
+    <dimen name="text_size_xxlarge">17sp</dimen>
+    <dimen name="text_size_xlarge">15sp</dimen>
+    <dimen name="text_size_large">13sp</dimen>
+    <dimen name="text_size_default">12sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_size_xsmall">8sp</dimen>
+    <!--边距-->
+    <dimen name="view_margin_big_large">58dp</dimen>
+    <dimen name="view_margin_xxxlarge">28dp</dimen>
+    <dimen name="view_margin_xxlarge">26dp</dimen>
+    <dimen name="view_margin_xlarge">24dp</dimen>
+    <dimen name="view_margin_large">22dp</dimen>
+    <dimen name="dp_19">19dp</dimen>
+    <dimen name="view_margin_default">18dp</dimen>
+    <dimen name="view_margin">15dp</dimen>
+    <dimen name="view_margin_small">12dp</dimen>
+    <dimen name="view_margin_xsmall">10dp</dimen>
+    <dimen name="view_margin_xxsmall">8dp</dimen>
+    <dimen name="view_margin_xxxsmall">5dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_115">115dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="corners">14dp</dimen>
+    <dimen name="corners_small">7dp</dimen>
+    <dimen name="corners_xsmall">4dp</dimen>
+    <!--控件大小-->
+    <dimen name="toolbar_height">44dp</dimen>
+    <dimen name="dp_53">53dp</dimen>
+    <dimen name="dp_42">42dp</dimen>
+    <dimen name="dp_85">85dp</dimen>
+    <dimen name="toolbar_height_default">30dp</dimen>
+    <dimen name="toolbar_height_small">20dp</dimen>
+    <dimen name="navigation_bar_height">50dp</dimen>
+    <dimen name="navigation_bar_height_small">40dp</dimen>
+    <dimen name="view_height_xxlarge">200dp</dimen>
+    <dimen name="view_height_192dp">192dp</dimen>
+    <dimen name="view_height_190dp">190dp</dimen>
+    <dimen name="view_height_xlarge">160dp</dimen>
+    <dimen name="dp_186">186dp</dimen>
+    <dimen name="view_height_large">120dp</dimen>
+    <dimen name="dp_58">58dp</dimen>
+    <dimen name="dp_182">182dp</dimen>
+    <dimen name="dp_154">154dp</dimen>
+    <dimen name="dp_158">158dp</dimen>
+    <dimen name="dp_163">163dp</dimen>
+    <dimen name="dp_106">106dp</dimen>
+    <dimen name="dp_109">109dp</dimen>
+    <dimen name="view_height">100dp</dimen>
+    <dimen name="view_height_small">94dp</dimen>
+    <dimen name="dp_94">94dp</dimen>
+    <dimen name="dp_88">88dp</dimen>
+    <dimen name="dp_84">84dp</dimen>
+    <dimen name="dp_79">79dp</dimen>
+    <dimen name="dp_77">77dp</dimen>
+    <dimen name="dp_31">31dp</dimen>
+    <dimen name="dp_29">29dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+    <dimen name="view_height_xsmall">70dp</dimen>
+    <dimen name="dp_67">67dp</dimen>
+    <dimen name="dp_65">65dp</dimen>
+    <dimen name="dp_173">173dp</dimen>
+    <dimen name="view_height_xxsmall">60dp</dimen>
+    <dimen name="view_height_45dp">45dp</dimen>
+    <dimen name="view_height_40dp">40dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+    <dimen name="dp_38">38dp</dimen>
+    <dimen name="dp_36">36dp</dimen>
+    <!--线宽-->
+    <dimen name="line_size">1dp</dimen>
+    <dimen name="line_size_large">2dp</dimen>
+</resources>

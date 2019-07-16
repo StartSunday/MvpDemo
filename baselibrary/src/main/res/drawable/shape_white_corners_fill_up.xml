@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--白色圆角矩阵 只有上圆角-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/white" />
+    <corners android:topLeftRadius="@dimen/view_margin_xxsmall"  android:topRightRadius="@dimen/view_margin_xxsmall"/>
+</shape>

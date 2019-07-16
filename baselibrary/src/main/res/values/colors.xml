@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3192f5</color>
+    <color name="colorPrimaryDark">#800C8AFF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="window_bg">#F5F5F5</color>
+
+    <color name="text_black">#1F1F1F</color>
+    <color name="text_black_light">#666666</color>
+    <color name="text_gray">#464646</color>
+    <color name="text_blue">#0374FF</color>
+    <color name="text_gray_light">#6D6D6D</color>
+    <color name="text_white_light">#F2F2F2</color>
+    <color name="text_gray_xlight">#CCCCD0</color>
+    <color name="line">#eeeeee</color>
+    <color name="opaque_white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent80">#33000000</color>
+    <color name="transparent50">#7F000000</color>
+    <color name="transparent30">#B2000000</color>
+    <color name="lxgray">#7A9F9A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF5E5E</color>
+    <color name="crimson">#D51616</color>
+    <color name="sky_blue">#9EDEF6</color>
+    <color name="sea_blue">#84B1F0</color>
+    <color name="gray">#F2F2F2</color>
+    <color name="light_green">#D2E1F3</color>
+    <color name="blue">#0374FF</color>
+    <color name="orange">#EC622A</color>
+    <color name="coupon_color">#FFF36B28</color>
+    <color name="orange_gradual_change1">#ffe77816</color>
+    <color name="orange_gradual_change2">#ffff6102</color>
+    <color name="orange_gradual_change3">#fff6a54e</color>
+    <color name="card_bg">#FFC1D8F8</color>
+    <color name="card_bg2">#72C1D8F8</color>
+    <color name="car_bg">#7EB5F4</color>
+</resources>

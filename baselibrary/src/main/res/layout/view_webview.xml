@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.lzyzsd.jsbridge.BridgeWebView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bridge_webView"
+    style="@style/ScrollBar"/>
